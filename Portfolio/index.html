@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e137fdbf4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src ="images/logo.jpg " class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <P>Web developer</P>
+                <h1>Hi, I'm <span>Yerom</span> Paulos</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--ABOUT-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                <img src="images/frizz.jpg" alt="">
+               </div> 
+               <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> As an individual with exemplary communication skills, I am deeply enthusiastic about gaining practical 
+                    experience and furthering my skill set. My commitment to meeting deadlines consistently ensures that I contribute 
+                    effectively to any project. Additionally, I remain up-to-date with the latest advancements in relevant software and technology. My 
+                    proactive approach to learning and adaptability positions me to excel in dynamic work environments. Lets connect—I am ready to make a meaningful impact!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                        <li><span>Web Developement</span><br>Website application developement</li>
+                        <li><span>Appointment Setting</span><br>Setting and scheduling appointments for clients</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Shiffs Technologies P.L.C.</span><br>Website development for a catering company</li>
+                        <li><span>Match One Medical</span><br>Setting and scheduling appointments</li>
+                        <li><span>Nehemia Autism Center</span><br>Helping with kids day to day learning activities.</li>
+                        <li><span>Private Tutor</span><br>Tutored and helped a grade 8 student get ready for her national examination</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Ethio-Parent School</span><br>2003-2019<br>Took national examination 0n 2019</li>
+                        <li><span>HiLCoE School of Computer Science and Technology</span><br>2019-2024<br>Tookexit exam on 2024</li>
+                    </ul>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>  
+
+    <!--SERVICES-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developement</h2>
+                    <p>As a web developer, I transform concepts into functional websites with HTML, CSS, JavaScript and Wordpress.
+                       I thrive on turning code into captivating user experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <h2>Appointement Setting</h2>
+                    <p>I handle the nitty-gritty of coordinating appointments, ensuring smooth interactions between clients and businesses. 
+                        From booking meetings to managing reminders, I’ve got you covered. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>UI/UX</h2>
+                    <p>As a UI/UX designer, I craft delightful digital experiences that seamlessly blend aesthetics and functionality. 
+                        Using Figma, I create intuitive user interfaces (UI) and engaging user experiences (UX).</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<!--PORTFOLIO-->
+
+<div id="portfolio">
+
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mywork1.jpg" alt="" />
+                <div class="layer">
+                    <h3>Web App</h3>
+                    <p>Developed a website for a cattering company</p>
+                    <a href="https://surecatering.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mywork2.jpg" alt="" />
+                <div class="layer">
+                    <h3>Web App</h3>
+                    <p>Developed a website for a cattering company</p>
+                    <a href="https://surecatering.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/mywork3.jpg" alt="" />
+                <div class="layer">
+                    <h3>Web App</h3>
+                    <p>Developed a website for a cattering company</p>
+                    <a href="https://surecatering.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+    <!--CONTACT-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                <h1 class="sub-title">Contact Me </h1>
+                <p><i class="fa-solid fa-envelope"></i>yerompaulosg@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+251-920-610-961</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/yeromina_paul?igsh=MTBhcGhvdDluODhwMQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yerom-paulos-0391a81a2/"><i class="fa-brands fa-linkedin"></i></i></a>
+                    <a href="https://www.upwork.com/freelancers/~01d70527d2e1f8cf37"><i class="fa-brands fa-square-upwork"></i></a>
+                </div>
+                <a href="images/YeromPaulos' Resume.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © YeromPaulos</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove( "active-link" );
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove( "active-tab" );
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right= "0";
+        }
+        function closemenu(){
+            sidemenu.style.right= "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzzVzbsx1EGBE7xwwI8DAfOobdTwihikQmPzM2PxcBRpbkl9nhIKPVP0qmNohBXI8aLMA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully! Thank you!" 
+                setTimeout(function(){
+                    msg.innerHTML=""
+            },1000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
